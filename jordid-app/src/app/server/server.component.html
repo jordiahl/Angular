@@ -1,0 +1,13 @@
+<h1>
+  Server works!
+</h1>
+
+<p> server id = {{serverId}}</p>
+<p> server status = {{serverStatus}}</p>
+<p> get server status function= {{getServerStatus()}}</p>
+<p> number of created servers {{numberOfCreatedServers}}</p>
+
+<button
+  class="btn btn-primary"
+  [disabled] = "allowNewServer"
+  (click)="onCreateServer()">Add Server</button>
